@@ -45,7 +45,12 @@ function DeleteElement(listId, liElement){
     document.getElementById(listId).removeChild(liElement);
 }
 
-DeleteElement("list", document.getElementById("5"));
+//DeleteElement("list", document.getElementById("5"));
 //DeleteElement("list", document.getElementById("list").lastChild);
 
+// Task 5
+function EditLiText(elementId, newText){
+    document.getElementById(elementId).textContent = newText;
+}
 
+EditLiText("5", "Soda");
