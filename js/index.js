@@ -20,5 +20,12 @@ function CreateLiElement(elementText, classAttribute, id){
     return newElement;
 }
 
-let liste = document.getElementById("list");
-liste.appendChild(CreateLiElement("Banana", "healthy", "4"));
+// let liste = document.getElementById("list");
+// liste.appendChild(CreateLiElement("Banana", "healthy", "4"));
+
+// Opgave 2
+function AppendToList(listId, liElement){
+    document.getElementById(listId).appendChild(liElement);
+}
+
+AppendToList("list", CreateLiElement("Banana", "healthy", "4"))
