@@ -39,3 +39,13 @@ function SetClassAttribute(elementId, classValue){
 
 AppendToList("list", CreateLiElement("Cola", null, "5"));
 SetClassAttribute("5", "unhealthy");
+
+// Task 4
+function DeleteElement(listId, liElement){
+    document.getElementById(listId).removeChild(liElement);
+}
+
+DeleteElement("list", document.getElementById("5"));
+//DeleteElement("list", document.getElementById("list").lastChild);
+
+
