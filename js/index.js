@@ -54,3 +54,10 @@ function EditLiText(elementId, newText){
 }
 
 EditLiText("5", "Soda");
+
+// Task 6
+function ListCount(listId) {
+    return document.getElementById(listId).children.length;
+}
+
+console.log(ListCount("list"));
