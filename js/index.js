@@ -8,10 +8,12 @@ console.log("Shoppinglist")
 // console.log(Sum(5,10));
 // console.log(Sum(5,"10"));
 
-// Opgave 1
+// Task 1
 function CreateLiElement(elementText, classAttribute, id){
     let newElement = document.createElement("li");
-    newElement.setAttribute("class", classAttribute);
+    if (classAttribute != null) {
+        newElement.setAttribute("class", classAttribute);
+    }
     newElement.setAttribute("id", id);
 
     let textNode = document.createTextNode(elementText);
@@ -23,9 +25,17 @@ function CreateLiElement(elementText, classAttribute, id){
 // let liste = document.getElementById("list");
 // liste.appendChild(CreateLiElement("Banana", "healthy", "4"));
 
-// Opgave 2
+// Task 2
 function AppendToList(listId, liElement){
     document.getElementById(listId).appendChild(liElement);
 }
 
 AppendToList("list", CreateLiElement("Banana", "healthy", "4"))
+
+// Task 3
+function SetClassAttribute(elementId, classValue){
+    document.getElementById(elementId).setAttribute("class", classValue);
+}
+
+AppendToList("list", CreateLiElement("Cola", null, "5"));
+SetClassAttribute("5", "unhealthy");
