@@ -10,6 +10,8 @@ ul {
   padding: 0;
   margin: 0; }
 
+
+
 li {
   background-color: #ec8b68;
   color: #fff;
@@ -19,9 +21,15 @@ li {
   letter-spacing: .05em;
   list-style-type: none;
   text-shadow: 2px 2px 1px #9f593f;
-  height: 50px;
+  height: 80px;
   padding-left: 1em;
-  padding-top: 10px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.listDeleteButton {
+  float: right;
+  margin: 5px;
+}
 
 .unhealthy {
   background-color: red;
