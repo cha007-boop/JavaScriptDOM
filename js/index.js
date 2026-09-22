@@ -61,3 +61,16 @@ function ListCount(listId) {
 }
 
 console.log(ListCount("list"));
+
+// Task 7
+function MoveMarkedElements(fromListId, toListId){
+    let oldList = document.getElementById(fromListId);
+    let newList = document.getElementById(toListId);
+
+    let markedElements = oldList.querySelectorAll(".unhealthy");
+    markedElements.forEach(element => {
+        newList.appendChild(element);
+    });
+}
+
+MoveMarkedElements("list", "listUnhealthy");
